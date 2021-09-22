@@ -1,3 +1,5 @@
+import './style.css';
+
 // import {Chart} from 'chart.js';
 // ↑だと実行時エラーが発生するので、
 // https://stackoverflow.com/questions/67238650/problem-for-display-a-chart-with-chart-js-and-angular
