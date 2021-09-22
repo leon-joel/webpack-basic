@@ -12,6 +12,10 @@ module.exports = {
                 test: /\.css$/,
                 // 後ろから順に（css-loader -> style-loader の順に）処理が行われる
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(sass|scss)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     }

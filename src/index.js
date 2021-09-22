@@ -1,4 +1,5 @@
 import './style.css';
+import './style.scss';
 
 // import {Chart} from 'chart.js';
 // ↑だと実行時エラーが発生するので、
