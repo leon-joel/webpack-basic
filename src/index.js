@@ -5,7 +5,7 @@ import './style.scss';
 // ↑だと実行時エラーが発生するので、
 // https://stackoverflow.com/questions/67238650/problem-for-display-a-chart-with-chart-js-and-angular
 // ↓に変更
-import { Chart, registerables} from 'chart.js';
+import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 window.onload = function () {
@@ -47,3 +47,18 @@ window.onload = function () {
         }
     });
 }
+
+
+class Test {
+    constructor(name) {
+        this.name = name;
+    }
+
+    logger() {
+        console.log("Hello", this.name);
+    }
+}
+
+let test = new Test('world');
+
+test.logger();
